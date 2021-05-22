@@ -208,14 +208,14 @@ html {
     border-radius: 1.5rem;
     font-size: 3rem;
     background-color: rgba(0, 0, 0, 0);
-    color: var(--color-azul);
-    border-color: var(--color-azul);
+    color: var(--color-verde);
+    border-color: var(--color-verde);
     font-weight: 900;
     text-align: center;
   }
   .principal-btn:hover {
-    color: var(--color-azul-hover);
-    border-color: var(--color-azul-hover);
+    color: var(--color-verde-hover);
+    border-color: var(--color-verde-hover);
   }
 
   /*Libros*/
