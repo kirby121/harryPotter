@@ -227,6 +227,11 @@ html {
 
   .libro {
     padding: 3rem 2rem 2rem 2rem;
+    border-radius: 5vh;
+    transition: 0.5s;
+  }
+  .libro:hover {
+    background-color: rgb(192, 192, 192);
   }
   .libros {
     border-radius: 5vh;
