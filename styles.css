@@ -224,18 +224,19 @@ html {
     font-size: 1.5rem;
     padding: 1.5rem;
   }
-
-  .libro {
-    padding: 3rem 2rem 2rem 2rem;
-    border-radius: 5vh;
-    padding-bottom: 5rem;
-  }
-  .libro:hover {
-    background-color: rgb(192, 192, 192);
-  }
+  
   .libros {
     border-radius: 5vh;
     transition: 0.5s;
+  }
+
+  .libro {
+    padding: 4.5rem 2rem 2rem 3.5rem;
+    border-radius: 5vh;
+    transition: 0.5s;
+  }
+  .libro:hover {
+    background-color: rgb(192, 192, 192);
   }
 
   .libro-imagen-div {
