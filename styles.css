@@ -1,0 +1,190 @@
+:root {
+  --color-verde: rgb(20, 124, 1);
+  --color-azul: rgba(0, 136, 160, 0.746);
+  --color-azul-hover: rgba(4, 185, 218, 0.698);
+  --color-titulos: rgb(218, 218, 218);
+  --color-subtitulos: rgb(158, 158, 158);
+  /*Colores que se usarán en el documento*/
+}
+* {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+html {
+  background-color: black;
+}
+
+/*Index*/
+
+.fondo-inicio {
+  background-image: url("Chica_leyendo_harry_potter.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flexbox;
+  background-position: center;
+}
+.principal {
+  background-color: black;
+  display: flexbox;
+  height: 45vh;
+  margin-top: -5vh;
+  border-radius: 5vh 5vh 0 0;
+}
+.principal-texto {
+  text-align: center;
+}
+.principal-titulo {
+  color: var(--color-titulos);
+  padding-top: 1rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.principal-subtitulo {
+  color: var(--color-subtitulos);
+  padding-top: 1.5rem;
+  font-size: 1.2rem;
+}
+.principal-div-btn {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 1.5rem;
+}
+.principal-btn {
+  color: var(--color-verde);
+  padding: 0.3rem 2rem;
+  border: var(--color-verde) solid 0.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  background-color: black;
+  display: inline-block;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/*Libros*/
+
+.libros-titulo {
+  color: var(--color-titulos);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.libros {
+  background-color: var(--color-titulos);
+  display: flexbox;
+  right: 0;
+  left: 0;
+  border-radius: 5vh 5vh 0 0;
+}
+
+.libro {
+  display: flexbox;
+  padding: 3rem 2rem 1rem 2rem;
+}
+
+.libro-imagen-div {
+  background-color: black;
+  width: 6rem;
+  height: 6rem;
+  display: inline-block;
+  border-radius: 0.4rem;
+}
+
+.libro-imagen {
+  width: 80%;
+  border-radius: 0.4rem;
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.libro-texto {
+  display: inline-block;
+  width: 10rem;
+  vertical-align: top;
+  padding-left: 1.5rem;
+}
+.libro-titulo {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+.libro-informacion {
+  font-size: 0.8rem;
+  color: rgb(73, 73, 73);
+}
+/*Responsive*/
+
+@media (min-width: 600px) {
+  /*Index*/
+
+  .fondo-inicio {
+    height: 45vh;
+  }
+  .principal {
+    height: 60vh;
+  }
+  .principal-titulo {
+    padding-top: 1rem;
+    font-size: 4rem;
+  }
+  .principal-subtitulo {
+    font-size: 1.8rem;
+  }
+  .principal-btn {
+    padding: 0.5rem 3rem;
+    border-width: 0.5rem;
+    border-radius: 1.3rem;
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 900px) {
+  /*Index*/
+
+  .fondo-inicio {
+    height: 100vh;
+    background-image: url("https://i.pinimg.com/originals/1e/3d/65/1e3d65ecb6a4f0cb60af79a066c202e3.jpg");
+  }
+  .principal {
+    height: 100vh;
+    margin-top: -100vh;
+    width: 100vw;
+    background: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  }
+  .principal-texto {
+    text-align: right;
+    margin-right: 10%;
+  }
+  .principal-titulo {
+    padding-top: 1rem;
+    font-size: 8rem;
+  }
+  .principal-subtitulo {
+    font-size: 3rem;
+    padding-top: 10%;
+  }
+  .principal-div-btn {
+    margin-top: 1.5rem;
+    margin: 1.5rem 5% auto 0;
+    position: relative;
+    float: right;
+  }
+  .principal-btn {
+    padding: 0.7rem 5rem;
+    border-width: 0.7rem;
+    border-radius: 1.5rem;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--color-azul);
+    border-color: var(--color-azul);
+    font-weight: 900;
+    text-align: center;
+  }
+  .principal-btn:hover {
+    color: var(--color-azul-hover);
+    border-color: var(--color-azul-hover);
+  }
+}
