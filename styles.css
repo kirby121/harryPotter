@@ -1,7 +1,6 @@
 :root {
-  --color-verde: rgb(20, 124, 1);
-  --color-azul: rgba(0, 136, 160, 0.746);
-  --color-azul-hover: rgba(4, 185, 218, 0.698);
+  --color-verde: rgba(19, 124, 1, 0.753);
+  --color-verde-hover: rgba(26, 173, 0, 0.712);
   --color-titulos: rgb(218, 218, 218);
   --color-subtitulos: rgb(158, 158, 158);
   /*Colores que se usarán en el documento*/
