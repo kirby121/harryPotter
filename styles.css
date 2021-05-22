@@ -234,6 +234,7 @@ html {
   }
   .libros {
     border-radius: 5vh;
+    transition: 0.5s;
   }
 
   .libro-imagen-div {
