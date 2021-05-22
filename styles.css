@@ -12,6 +12,7 @@
 }
 html {
   background-color: black;
+  width: 100%;
 }
 
 /*Index*/
@@ -76,20 +77,22 @@ html {
 .libros {
   background-color: var(--color-titulos);
   display: flexbox;
-  right: 0;
-  left: 0;
+  width: 100%;
   border-radius: 5vh 5vh 0 0;
+  justify-content: space-between;
+  bottom: 0;
 }
 
 .libro {
-  display: flexbox;
+  display: inline-flex;
   padding: 3rem 2rem 1rem 2rem;
+  cursor: pointer;
 }
 
 .libro-imagen-div {
   background-color: black;
-  width: 6rem;
-  height: 6rem;
+  width: 35%;
+  height: 35%;
   display: inline-block;
   border-radius: 0.4rem;
 }
@@ -104,12 +107,12 @@ html {
 
 .libro-texto {
   display: inline-block;
-  width: 10rem;
+  width: 50%;
   vertical-align: top;
   padding-left: 1.5rem;
 }
 .libro-titulo {
-  font-size: 1rem;
+  font-size: 1em;
   padding-bottom: 0.5rem;
 }
 .libro-informacion {
@@ -139,6 +142,34 @@ html {
     border-width: 0.5rem;
     border-radius: 1.3rem;
     font-size: 1.8rem;
+  }
+
+  /*Libros*/
+
+  .libros-titulo {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  .libro {
+    padding: 4rem 3rem 2rem 3rem;
+  }
+
+  .libro-imagen-div {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .libro-texto {
+    width: 17rem;
+    padding-left: 2rem;
+  }
+  .libro-titulo {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .libro-informacion {
+    font-size: 1.3rem;
   }
 }
 @media (min-width: 900px) {
@@ -186,5 +217,36 @@ html {
   .principal-btn:hover {
     color: var(--color-azul-hover);
     border-color: var(--color-azul-hover);
+  }
+
+  /*Libros*/
+
+  .libros-titulo {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .libro {
+    padding: 3rem 2rem 2rem 2rem;
+  }
+  .libros {
+    border-radius: 5vh;
+  }
+
+  .libro-imagen-div {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .libro-texto {
+    width: 15rem;
+    padding-left: 1.7rem;
+  }
+  .libro-titulo {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  .libro-informacion {
+    font-size: 1rem;
   }
 }
