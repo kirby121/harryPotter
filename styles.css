@@ -67,11 +67,36 @@ html {
 
 /*Libros*/
 
+header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .libros-titulo {
   color: var(--color-titulos);
   font-size: 1.5rem;
   text-align: center;
-  padding: 1.5rem;
+  padding: 1rem 0.2rem;
+}
+
+input {
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
+  width: 80%;
+  font-size: 1.2rem;
+  padding: 0.3rem 0.5rem;
+  background-color: rgb(37, 37, 37);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--color-subtitulos);
+  text-align: center;
+}
+
+input:focus {
+  background-color: rgb(61, 61, 61);
+  outline: none;
 }
 
 .libros {
@@ -254,5 +279,10 @@ html {
   }
   .libro-informacion {
     font-size: 1rem;
+  }
+}
+@media (min-width: 470px) {
+  .input {
+    display: none;
   }
 }
