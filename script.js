@@ -12,3 +12,20 @@ d.addEventListener("click", e =>  {
     location.href = "libros.html";
   }
 })
+
+function filtrar(input, selector) {
+  d.addEventListener("keyup", e => {
+    if(e.target.matches(input)){
+
+      if(e.key === "Escape") e.target.vale = "";
+
+      d.querySelectorAll(selector).forEach(el => 
+        el.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+        ? el.classList.remove("filter")
+        : el.classList.add("filter")
+      )
+    }
+  });
+}
+
+filtrar("#filtro", ".libro");
