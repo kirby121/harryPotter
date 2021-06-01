@@ -99,6 +99,12 @@ input:focus {
   outline: none;
 }
 
+.filter {
+  visibility: hidden;
+  opacity: 0;
+  order: 1;
+}
+
 .libros {
   background-color: var(--color-titulos);
   display: flex;
@@ -113,6 +119,7 @@ input:focus {
   display: inline-flex;
   padding: 3rem 2rem 1rem 2rem;
   cursor: url(https://cdn.custom-cursor.com/db/5047/32/arrow2857.png), pointer;
+  transition: all 0.3s ease-out;
 }
 
 .libro-imagen-div {
@@ -145,6 +152,7 @@ input:focus {
   font-size: 0.8rem;
   color: rgb(73, 73, 73);
 }
+
 /*Responsive*/
 
 @media (min-width: 600px) {
